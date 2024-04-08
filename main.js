@@ -21,13 +21,28 @@ const rickAndMortyCharacters = ["Rick", "Beth", "Jerry", "Morty", "Summer", "Lap
 const hulk = avengers[0]
 console.log(hulk) */
 
-let avengers = ['HULK', 'SPIDERMAN', 'BLACK PANTHER']
+/* let avengers = ['HULK', 'SPIDERMAN', 'BLACK PANTHER']
 avengers[0] = 'IRONMAN'
 console.log(avengers)
 
 const avengers = ['HULK', 'SPIDERMAN', 'BLACK PANTHER']
 console.log('El número de elementos es:', avengers.length)
-
-const rickAndMortyCharacters = ['Rick', 'Beth', 'Jerry']
+ */
+/* const rickAndMortyCharacters = ['Rick', 'Beth', 'Jerry']
 rickAndMortyCharacters.push('Morty', 'Summer')
-console.log(rickAndMortyCharacters[rickAndMortyCharacters.length - 1])
+console.log(rickAndMortyCharacters[rickAndMortyCharacters.length - 1]) */
+
+const rickAndMortyCharacters = [
+  'Rick',
+  'Beth',
+  'Jerry',
+  'Morty',
+  'Summer',
+  'Lapiz Lopez'
+]
+rickAndMortyCharacters.pop()
+console.log('Primer personaje:', rickAndMortyCharacters[0])
+console.log(
+  'Último personaje:',
+  rickAndMortyCharacters[rickAndMortyCharacters.length - 1]
+)
