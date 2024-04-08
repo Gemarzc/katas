@@ -21,6 +21,9 @@ const rickAndMortyCharacters = ["Rick", "Beth", "Jerry", "Morty", "Summer", "Lap
 const hulk = avengers[0]
 console.log(hulk) */
 
-let avengers = ['HULK', 'SPIDERMAN', 'BLACK PANTHER']
+/* let avengers = ['HULK', 'SPIDERMAN', 'BLACK PANTHER']
 avengers[0] = 'IRONMAN'
-console.log(avengers)
+console.log(avengers) */
+
+const avengers = ['HULK', 'SPIDERMAN', 'BLACK PANTHER']
+console.log('El número de elementos en el array avengers es:', avengers.length)
