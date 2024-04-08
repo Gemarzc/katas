@@ -17,6 +17,10 @@ const rickAndMortyCharacters = ["Rick", "Beth", "Jerry", "Morty", "Summer", "Lap
 1.6 Elimina el segundo elemento del array y muestra el array por consola.
 const rickAndMortyCharacters = ["Rick", "Beth", "Jerry", "Morty", "Summer", "Lapiz Lopez"]; */
 
-const avengers = ['HULK', 'SPIDERMAN', 'BLACK PANTHER']
+/* const avengers = ['HULK', 'SPIDERMAN', 'BLACK PANTHER']
 const hulk = avengers[0]
-console.log(hulk)
+console.log(hulk) */
+
+let avengers = ['HULK', 'SPIDERMAN', 'BLACK PANTHER']
+avengers[0] = 'IRONMAN'
+console.log(avengers)
