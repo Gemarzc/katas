@@ -1,28 +1,22 @@
-/* 1.1 Multiplica 10 por 5 y muestra el resultado mediante console.
+/* 1.1 Consigue el valor "HULK" del array de avengers y muestralo por consola.
+const avengers = ["HULK", "SPIDERMAN", "BLACK PANTHER"];
 
-1.2 Divide 10 por 2 y muestra el resultado en un console.
+1.2 Cambia el primer elemento de avengers a "IRONMAN"
+const avengers = ["HULK", "SPIDERMAN", "BLACK PANTHER"];
 
-1.3 Muestra mediante un console el resto de dividir 15 por 9.
+1.3 console numero de elementos en el array usando la propiedad correcta de Array.
+const avengers = ["HULK", "SPIDERMAN", "BLACK PANTHER"];
 
-1.4 Usa el correcto operador de asignación que resultará en o = 15, 
-teniendo dos variables p = 10 y j = 5.
+1.4 Añade 2 elementos al array: "Morty" y "Summer". 
+Muestra en consola el último personaje del array
+const rickAndMortyCharacters = ["Rick", "Beth", "Jerry"];
 
-1.5 Usa el correcto operador de asignación que resultará en i = 50,
-teniendo dos variables c = 10 y m = 5. */
+1.5 Elimina el último elemento del array y muestra el primero y el último por consola.
+const rickAndMortyCharacters = ["Rick", "Beth", "Jerry", "Morty", "Summer", "Lapiz Lopez"];
 
-const multiply = 10 * 5
-console.log('El resultado de la multiplicación es :', multiply)
+1.6 Elimina el segundo elemento del array y muestra el array por consola.
+const rickAndMortyCharacters = ["Rick", "Beth", "Jerry", "Morty", "Summer", "Lapiz Lopez"]; */
 
-const divide = 10 / 2
-console.log('El resultado de la división es :', divide)
-
-const resto = 15 % 9
-console.log('El resto de dividir 15 por 9 es:', resto)
-
-const sum = 10 + 5
-console.log('El resultado de la suma es:', sum)
-
-let c = 10
-let m = 5
-let i = c * m
-console.log('El resultado es:', i)
+const avengers = ['HULK', 'SPIDERMAN', 'BLACK PANTHER']
+const hulk = avengers[0]
+console.log(hulk)
