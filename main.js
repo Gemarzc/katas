@@ -32,7 +32,7 @@ console.log('El número de elementos es:', avengers.length)
 rickAndMortyCharacters.push('Morty', 'Summer')
 console.log(rickAndMortyCharacters[rickAndMortyCharacters.length - 1]) */
 
-const rickAndMortyCharacters = [
+/* const rickAndMortyCharacters = [
   'Rick',
   'Beth',
   'Jerry',
@@ -45,4 +45,20 @@ console.log('Primer personaje:', rickAndMortyCharacters[0])
 console.log(
   'Último personaje:',
   rickAndMortyCharacters[rickAndMortyCharacters.length - 1]
+) */
+
+const rickAndMortyCharacters = [
+  'Rick',
+  'Beth',
+  'Jerry',
+  'Morty',
+  'Summer',
+  'Lapiz Lopez'
+]
+
+rickAndMortyCharacters.splice(1, 1)
+
+console.log(
+  'El array después de eliminar el segundo elemento es:',
+  rickAndMortyCharacters
 )
