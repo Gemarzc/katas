@@ -33,6 +33,7 @@ const number3 = 2;
 
 const number1 = 10
 const number2 = 20
-if (number1 == !number2) {
-  console.log('number1 es estrictamente distinto a number2')
+const number3 = 2
+if (number3 == !number1) {
+  console.log('number3 es distinto number1')
 }
