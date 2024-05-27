@@ -1,64 +1,38 @@
-/* 1.1 Consigue el valor "HULK" del array de avengers y muestralo por consola.
-const avengers = ["HULK", "SPIDERMAN", "BLACK PANTHER"];
-
-1.2 Cambia el primer elemento de avengers a "IRONMAN"
-const avengers = ["HULK", "SPIDERMAN", "BLACK PANTHER"];
-
-1.3 console numero de elementos en el array usando la propiedad correcta de Array.
-const avengers = ["HULK", "SPIDERMAN", "BLACK PANTHER"];
-
-1.4 Añade 2 elementos al array: "Morty" y "Summer". 
-Muestra en consola el último personaje del array
-const rickAndMortyCharacters = ["Rick", "Beth", "Jerry"];
-
-1.5 Elimina el último elemento del array y muestra el primero y el último por consola.
-const rickAndMortyCharacters = ["Rick", "Beth", "Jerry", "Morty", "Summer", "Lapiz Lopez"];
-
-1.6 Elimina el segundo elemento del array y muestra el array por consola.
-const rickAndMortyCharacters = ["Rick", "Beth", "Jerry", "Morty", "Summer", "Lapiz Lopez"]; */
-
-/* const avengers = ['HULK', 'SPIDERMAN', 'BLACK PANTHER']
-const hulk = avengers[0]
-console.log(hulk) */
-
-/* let avengers = ['HULK', 'SPIDERMAN', 'BLACK PANTHER']
-avengers[0] = 'IRONMAN'
-console.log(avengers)
-
-const avengers = ['HULK', 'SPIDERMAN', 'BLACK PANTHER']
-console.log('El número de elementos es:', avengers.length)
+/* const number1 = 10;
+const number2 = 20;
+const number3 = 2;
  */
-/* const rickAndMortyCharacters = ['Rick', 'Beth', 'Jerry']
-rickAndMortyCharacters.push('Morty', 'Summer')
-console.log(rickAndMortyCharacters[rickAndMortyCharacters.length - 1]) */
+// ejemplo
+/* if(number1 === 10){
+    console.log('number1 es estrictamente igual a 10')
+} */
 
-/* const rickAndMortyCharacters = [
-  'Rick',
-  'Beth',
-  'Jerry',
-  'Morty',
-  'Summer',
-  'Lapiz Lopez'
-]
-rickAndMortyCharacters.pop()
-console.log('Primer personaje:', rickAndMortyCharacters[0])
-console.log(
-  'Último personaje:',
-  rickAndMortyCharacters[rickAndMortyCharacters.length - 1]
-) */
+/* if ( COMPLETAR ) {
+  console.log("number2 dividido entre number1 es igual a 2");
+} */
 
-const rickAndMortyCharacters = [
-  'Rick',
-  'Beth',
-  'Jerry',
-  'Morty',
-  'Summer',
-  'Lapiz Lopez'
-]
+/* if (COMPLETAR ) {
+  console.log("number1 es estrictamente distinto a number2");
+} */
 
-rickAndMortyCharacters.splice(1, 1)
+/* if (COMPLETAR) {
+  console.log("number3 es distinto number1");
+} */
 
-console.log(
-  'El array después de eliminar el segundo elemento es:',
-  rickAndMortyCharacters
-)
+/* if (COMPLETAR) {
+  console.log("number3 por 5 es igual a number1");
+} */
+
+/* if (COMPLETAR) {
+  console.log("number3 por 5 es igual a number1 Y number1 por 2 es igual a number2");
+} */
+
+/* if (COMPLETAR) {
+  console.log("number2 entre 2 es igual a number1 O number1 entre 5 es igual a number3");
+} */
+
+const number1 = 10
+const number2 = 20
+if (number2 / number1 === 2) {
+  console.log('number2 dividido entre number1 es igual a 2')
+}
