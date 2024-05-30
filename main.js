@@ -1,6 +1,22 @@
-function sum(numberOne, numberTwo) {
-  return numberOne + numberTwo
-}
-let result = sum(1, 2)
+const avengers = [
+  'Hulk',
+  'Thor',
+  'IronMan',
+  'Captain A.',
+  'Spiderman',
+  'Captain M.'
+]
 
-console.log(result) //3
+function findLongestWord(param) {
+  let longestWord = ''
+
+  for (let i = 0; i < param.length; i++) {
+    if (param[i].length > longestWord.length) {
+      longestWord = param[i]
+    }
+  }
+
+  return longestWord
+}
+
+console.log(findLongestWord(avengers))
