@@ -1,30 +1,13 @@
-const counterWords = [
-  'code',
-  'repeat',
-  'eat',
-  'sleep',
-  'code',
-  'enjoy',
-  'sleep',
-  'code',
-  'enjoy',
-  'upgrade',
-  'code'
+const products = [
+  'Camiseta de Pokemon',
+  'Pantalón coquinero',
+  'Gorra de gansta',
+  'Camiseta de Basket',
+  'Cinrurón de Orión',
+  'AC/DC Camiseta'
 ]
-
-function repeatCounter(param) {
-  const wordCount = {}
-
-  for (let i = 0; i < param.length; i++) {
-    const word = param[i]
-    if (wordCount[word]) {
-      wordCount[word]++
-    } else {
-      wordCount[word] = 1
-    }
+for (let i = 0; i < products.length; i++) {
+  if (products[i].includes('Camiseta')) {
+    console.log(products[i])
   }
-
-  return wordCount
 }
-
-console.log(repeatCounter(counterWords))
