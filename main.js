@@ -1,27 +1,30 @@
-const nameFinder = [
-  'Peter',
-  'Steve',
-  'Tony',
-  'Natasha',
-  'Clint',
-  'Logan',
-  'Xabier',
-  'Bruce',
-  'Peggy',
-  'Jessica',
-  'Marc'
+const counterWords = [
+  'code',
+  'repeat',
+  'eat',
+  'sleep',
+  'code',
+  'enjoy',
+  'sleep',
+  'code',
+  'enjoy',
+  'upgrade',
+  'code'
 ]
 
-function finderName(param, name) {
+function repeatCounter(param) {
+  const wordCount = {}
+
   for (let i = 0; i < param.length; i++) {
-    if (param[i] === name) {
-      return { found: true, index: i }
+    const word = param[i]
+    if (wordCount[word]) {
+      wordCount[word]++
+    } else {
+      wordCount[word] = 1
     }
   }
-  return { found: false, index: -1 }
+
+  return wordCount
 }
 
-console.log(finderName(nameFinder, 'Tony'))
-console.log(finderName(nameFinder, 'Bruce'))
-console.log(finderName(nameFinder, 'Natasha'))
-console.log(finderName(nameFinder, 'Michael'))
+console.log(repeatCounter(counterWords))
