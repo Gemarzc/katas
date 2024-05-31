@@ -1,16 +1,21 @@
-const mixedElements = [6, 1, 'Rayo', 1, 'vallecano', '10', 'upgrade', 8, 'hub']
+const duplicates = [
+  'sushi',
+  'pizza',
+  'burger',
+  'potatoe',
+  'pasta',
+  'ice-cream',
+  'pizza',
+  'chicken',
+  'onion rings',
+  'pasta',
+  'soda'
+]
 
-function averageWord(param) {
-  let sum = 0
+function removeDuplicates(param) {
+  const uniqueElements = new Set(param)
 
-  for (let i = 0; i < param.length; i++) {
-    if (typeof param[i] === 'number') {
-      sum += param[i]
-    } else if (typeof param[i] === 'string') {
-      sum += param[i].length
-    }
-  }
-  return sum
+  return Array.from(uniqueElements)
 }
 
-console.log(averageWord(mixedElements))
+console.log(removeDuplicates(duplicates))
