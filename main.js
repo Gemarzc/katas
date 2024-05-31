@@ -1,14 +1,16 @@
-const numbers = [12, 21, 38, 5, 45, 37, 6]
+const mixedElements = [6, 1, 'Rayo', 1, 'vallecano', '10', 'upgrade', 8, 'hub']
 
-function average(param) {
+function averageWord(param) {
   let sum = 0
 
   for (let i = 0; i < param.length; i++) {
-    sum += param[i]
+    if (typeof param[i] === 'number') {
+      sum += param[i]
+    } else if (typeof param[i] === 'string') {
+      sum += param[i].length
+    }
   }
-
-  let average = sum / param.length
-  return average
+  return sum
 }
 
-console.log(average(numbers))
+console.log(averageWord(mixedElements))
