@@ -1,13 +1,11 @@
-const products = [
-  'Camiseta de Pokemon',
-  'Pantalón coquinero',
-  'Gorra de gansta',
-  'Camiseta de Basket',
-  'Cinrurón de Orión',
-  'AC/DC Camiseta'
+const placesToTravel = [
+  'Japon',
+  'Venecia',
+  'Murcia',
+  'Santander',
+  'Filipinas',
+  'Madagascar'
 ]
-for (let i = 0; i < products.length; i++) {
-  if (products[i].includes('Camiseta')) {
-    console.log(products[i])
-  }
+for (const element of placesToTravel) {
+  console.log(element)
 }
