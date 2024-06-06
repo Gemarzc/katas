@@ -1,14 +1,20 @@
-const popularToys = []
-const toys = [
-  { id: 5, name: 'Buzz MyYear', sellCount: 10 },
-  { id: 11, name: 'Action Woman', sellCount: 24 },
-  { id: 23, name: 'Barbie Man', sellCount: 15 },
-  { id: 40, name: 'El gato con Guantes', sellCount: 8 },
-  { id: 40, name: 'El gato felix', sellCount: 35 }
+const users = [
+  { name: 'Tony', years: 43 },
+  { name: 'Peter', years: 18 },
+  { name: 'Natasha', years: 14 },
+  { name: 'Bruce', years: 32 },
+  { name: 'Khamala', years: 16 }
 ]
-for (const toy of toys) {
-  if (toy.sellCount > 15) {
-    popularToys.push(toy)
+
+let menores = 'Usuarios menores de edad:\n'
+let mayores = 'Usuarios mayores de edad:\n'
+
+for (const user of users) {
+  if (user.years < 18) {
+    menores += `${user.name}\n`
+  } else {
+    mayores += `${user.name}\n`
   }
 }
-console.log(popularToys)
+console.log(menores)
+console.log(mayores)
