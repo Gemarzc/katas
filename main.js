@@ -1,3 +1,5 @@
+const goodProducts = []
+const badProducts = []
 const products = [
   { name: 'Funko Dr. Strange', sellCount: 10 },
   { name: 'Mochila de protones: Ghostbusters', sellCount: 302 },
@@ -5,13 +7,13 @@ const products = [
   { name: 'Varita de Voldemort', sellCount: 6 }
 ]
 
-let totalSellCount = 0
-
 for (const product of products) {
-  totalSellCount += product.sellCount
+  if (product.sellCount > 20) {
+    goodProducts.push(product)
+  } else {
+    badProducts.push(product)
+  }
 }
 
-const averageSellCount = totalSellCount / products.length
-
-console.log('Total de ventas:', totalSellCount)
-console.log('Media de ventas:', averageSellCount)
+console.log('Good Products:', goodProducts)
+console.log('Bad Products:', badProducts)
