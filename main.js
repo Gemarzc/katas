@@ -1,20 +1,20 @@
-const users = [
-  { name: 'Tony', years: 43 },
-  { name: 'Peter', years: 18 },
-  { name: 'Natasha', years: 14 },
-  { name: 'Bruce', years: 32 },
-  { name: 'Khamala', years: 16 }
+const fruits = ['Strawberry', 'Banana', 'Orange', 'Apple']
+const foodSchedule = [
+  { name: 'Heura', isVegan: true },
+  { name: 'Salmon', isVegan: false },
+  { name: 'Tofu', isVegan: true },
+  { name: 'Burger', isVegan: false },
+  { name: 'Rice', isVegan: true },
+  { name: 'Pasta', isVegan: true }
 ]
+let fruitIndex = 0
 
-let menores = 'Usuarios menores de edad:\n'
-let mayores = 'Usuarios mayores de edad:\n'
-
-for (const user of users) {
-  if (user.years < 18) {
-    menores += `${user.name}\n`
-  } else {
-    mayores += `${user.name}\n`
+for (let i = 0; i < foodSchedule.length; i++) {
+  if (!foodSchedule[i].isVegan) {
+    if (fruitIndex < fruits.length) {
+      foodSchedule[i] = { name: fruits[fruitIndex], isVegan: true }
+      fruitIndex++
+    }
   }
 }
-console.log(menores)
-console.log(mayores)
+console.log(foodSchedule)
