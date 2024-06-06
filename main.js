@@ -11,4 +11,7 @@ for (const product of products) {
   totalSellCount += product.sellCount
 }
 
+const averageSellCount = totalSellCount / products.length
+
 console.log('Total de ventas:', totalSellCount)
+console.log('Media de ventas:', averageSellCount)
