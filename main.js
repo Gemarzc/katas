@@ -12,5 +12,5 @@ el atributo data-function="testMe".
 
 1.6 Usa querySelector para mostrar por consola el 3 personaje con el atributo 
 data-function="testMe". */
-const button = document.querySelector('.showme')
-console.log(button)
+const h1Element = document.querySelector('#pillado')
+console.log(h1Element)
