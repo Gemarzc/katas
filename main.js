@@ -12,5 +12,5 @@ el atributo data-function="testMe".
 
 1.6 Usa querySelector para mostrar por consola el 3 personaje con el atributo 
 data-function="testMe". */
-const paragraphs = document.querySelectorAll('p')
-paragraphs.forEach((p) => console.log(p))
+const pokemon = document.querySelectorAll('.pokemon')
+pokemon.forEach((pokemon) => console.log(pokemon))
