@@ -22,3 +22,9 @@ const apps = ['Facebook', 'Netflix', 'Instagram', 'Snapchat', 'Twitter'];
 1.9 Inserta p con el texto 'Voy dentro!', dentro de todos los div con la clase 
 	.fn-insert-here
  */
+
+const newDiv = document.createElement('div')
+
+const insertHere = document.querySelector('.fn-insert-here')
+
+insertHere.parentNode.insertBefore(newDiv, insertHere)
