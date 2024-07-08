@@ -23,8 +23,12 @@ const apps = ['Facebook', 'Netflix', 'Instagram', 'Snapchat', 'Twitter'];
 	.fn-insert-here
  */
 
-const newDiv = document.createElement('div')
+const nuevoDiv = document.createElement('div')
+
+const nuevoParrafo = document.createElement('p')
+newParagraph.textContent = 'Creando un nuevo párrafo dentro de un div con js'
+
+newDiv.appendChild(nuevoParrafo)
 
 const insertHere = document.querySelector('.fn-insert-here')
-
-insertHere.parentNode.insertBefore(newDiv, insertHere)
+insertHere.parentNode.insertBefore(nuevoDiv, insertHere)
