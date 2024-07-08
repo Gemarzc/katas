@@ -24,11 +24,11 @@ const apps = ['Facebook', 'Netflix', 'Instagram', 'Snapchat', 'Twitter'];
  */
 
 const nuevoDiv = document.createElement('div')
-
-const nuevoParrafo = document.createElement('p')
-newParagraph.textContent = 'Creando un nuevo párrafo dentro de un div con js'
-
-newDiv.appendChild(nuevoParrafo)
+for (let i = 0; i < 6; i++) {
+  const nuevoParrafo = document.createElement('p')
+  nuevoParrafo.textContent = `Este es el párrafo número ${i + 1}.`
+  nuevoDiv.appendChild(nuevoParrafo)
+}
 
 const insertHere = document.querySelector('.fn-insert-here')
 insertHere.parentNode.insertBefore(nuevoDiv, insertHere)
