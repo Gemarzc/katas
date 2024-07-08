@@ -23,12 +23,7 @@ const apps = ['Facebook', 'Netflix', 'Instagram', 'Snapchat', 'Twitter'];
 	.fn-insert-here
  */
 
-const nuevoDiv = document.createElement('div')
-for (let i = 0; i < 6; i++) {
-  const nuevoParrafo = document.createElement('p')
-  nuevoParrafo.textContent = `Este es el párrafo número ${i + 1}.`
-  nuevoDiv.appendChild(nuevoParrafo)
-}
+const nuevoParrafo = document.createElement('p')
 
-const insertHere = document.querySelector('.fn-insert-here')
-insertHere.parentNode.insertBefore(nuevoDiv, insertHere)
+nuevoParrafo.textContent = 'Soy dinámico!'
+document.body.appendChild(nuevoParrafo)
