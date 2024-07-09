@@ -24,9 +24,10 @@ const apps = ['Facebook', 'Netflix', 'Instagram', 'Snapchat', 'Twitter'];
  */
 
 const newParagraph = document.createElement('p')
-newParagraph.textContent = 'Voy en medio!'
+newParagraph.textContent = 'Voy dentro!'
 
-const divs = document.querySelectorAll('body > div')
-if (divs.length >= 2) {
-  divs[0].parentNode.insertBefore(newParagraph, divs[1])
-}
+const divs = document.querySelectorAll('div.fn-insert-here')
+divs.forEach((div) => {
+  const newParagraphClone = newParagraph.cloneNode(true)
+  div.appendChild(newParagraphClone)
+})
