@@ -23,7 +23,8 @@ const apps = ['Facebook', 'Netflix', 'Instagram', 'Snapchat', 'Twitter'];
 	.fn-insert-here
  */
 
-const nuevoParrafo = document.createElement('p')
+document.querySelector('h2.fn-insert-here').textContent = 'Wubba Lubba dub dub'
 
-nuevoParrafo.textContent = 'Soy dinámico!'
-document.body.appendChild(nuevoParrafo)
+document.querySelectorAll('p.fn-remove-me').forEach(function (element) {
+  element.remove()
+})
