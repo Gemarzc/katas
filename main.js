@@ -23,6 +23,10 @@ const apps = ['Facebook', 'Netflix', 'Instagram', 'Snapchat', 'Twitter'];
 	.fn-insert-here
  */
 
-document.querySelectorAll('.fn-remove-me').forEach(function (element) {
-  element.remove()
-})
+const newParagraph = document.createElement('p')
+newParagraph.textContent = 'Voy en medio!'
+
+const divs = document.querySelectorAll('body > div')
+if (divs.length >= 2) {
+  divs[0].parentNode.insertBefore(newParagraph, divs[1])
+}
