@@ -23,12 +23,6 @@ const apps = ['Facebook', 'Netflix', 'Instagram', 'Snapchat', 'Twitter'];
 	.fn-insert-here
  */
 
-const apps = ['Facebook', 'Netflix', 'Instagram', 'Snapchat', 'Twitter']
-
-const ulElement = document.getElementById('app-list')
-
-apps.forEach((app) => {
-  const liElement = document.createElement('li')
-  liElement.textContent = app
-  ulElement.appendChild(liElement)
+document.querySelectorAll('.fn-remove-me').forEach(function (element) {
+  element.remove()
 })
