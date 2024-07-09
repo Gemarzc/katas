@@ -1,33 +1,28 @@
-/* 1.1 Inserta dinamicamente en un html un div vacio con javascript.
+/* 1.1 Basandote en el array siguiente, crea una lista ul > li 
+dinámicamente en el html que imprima cada uno de los paises.
+const countries = ['Japón', 'Nicaragua', 'Suiza', 'Australia', 'Venezuela'];
 
-1.2 Inserta dinamicamente en un html un div que contenga una p con javascript.
+1.2 Elimina el elemento que tenga la clase .fn-remove-me.
 
-1.3 Inserta dinamicamente en un html un div que contenga 6 p utilizando un 
-	loop con javascript.
+1.3 Utiliza el array para crear dinamicamente una lista ul > li de elementos 
+en el div de html con el atributo data-function="printHere".
+const cars = ['Mazda 6', 'Ford fiesta', 'Audi A4', 'Toyota corola'];
 
-1.4 Inserta dinamicamente con javascript en un html una p con el 
-	texto 'Soy dinámico!'.
+1.4 Crea dinamicamente en el html una serie de divs que contenga un elemento 
+h4 para el titulo y otro elemento img para la imagen.
+const countries = [
+	{title: 'Random title', imgUrl: 'https://picsum.photos/300/200?random=1'}, 
+	{title: 'Random title', imgUrl: 'https://picsum.photos/300/200?random=2'},
+	{title: 'Random title', imgUrl: 'https://picsum.photos/300/200?random=3'},
+	{title: 'Random title', imgUrl: 'https://picsum.photos/300/200?random=4'},
+	{title: 'Random title', imgUrl: 'https://picsum.photos/300/200?random=5'}
+];
 
-1.5 Inserta en el h2 con la clase .fn-insert-here el texto 'Wubba Lubba dub dub'.
+1.5 Basandote en el ejercicio anterior. Crea un botón que elimine el último 
+elemento de la serie de divs.
 
-1.6 Basandote en el siguiente array crea una lista ul > li con 
-los textos del array.
-const apps = ['Facebook', 'Netflix', 'Instagram', 'Snapchat', 'Twitter'];
+1.6 Basandote en el ejercicio anterior. Crea un botón para cada uno de los 
+divs que elimine ese mismo elemento del html.
 
-1.7 Elimina todos los nodos que tengan la clase .fn-remove-me
 
-1.8 Inserta una p con el texto 'Voy en medio!' entre los dos div. 
-	Recuerda que no solo puedes insertar elementos con .appendChild.
-
-1.9 Inserta p con el texto 'Voy dentro!', dentro de todos los div con la clase 
-	.fn-insert-here
  */
-
-const newParagraph = document.createElement('p')
-newParagraph.textContent = 'Voy dentro!'
-
-const divs = document.querySelectorAll('div.fn-insert-here')
-divs.forEach((div) => {
-  const newParagraphClone = newParagraph.cloneNode(true)
-  div.appendChild(newParagraphClone)
-})
