@@ -26,7 +26,16 @@ divs que elimine ese mismo elemento del html.
 
 
  */
-const elementRemove = document.querySelector('.fn-remove-me')
-if (elementRemove) {
-  elementRemove.remove()
-}
+const cars = ['Mazda 6', 'Ford fiesta', 'Audi A4', 'Toyota corola']
+
+const divElement = document.querySelector('div[data-function="printHere"]')
+
+const ulElement = document.createElement('ul')
+
+cars.forEach((car) => {
+  const liElement = document.createElement('li')
+  liElement.textContent = car
+  ulElement.appendChild(liElement)
+})
+
+divElement.appendChild(ulElement)
