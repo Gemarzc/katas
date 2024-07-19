@@ -26,12 +26,7 @@ divs que elimine ese mismo elemento del html.
 
 
  */
-
-const countries = ['Japón', 'Nicaragua', 'Suiza', 'Australia', 'Venezuela']
-
-const ulElement = document.getElementById('country-list')
-countries.forEach((country) => {
-  const liElement = document.createElement('li')
-  liElement.textContent = country
-  ulElement.appendChild(liElement)
-})
+const elementRemove = document.querySelector('.fn-remove-me')
+if (elementRemove) {
+  elementRemove.remove()
+}
