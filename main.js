@@ -26,16 +26,26 @@ divs que elimine ese mismo elemento del html.
 
 
  */
-const cars = ['Mazda 6', 'Ford fiesta', 'Audi A4', 'Toyota corola']
+const countries = [
+  { title: 'Random title', imgUrl: 'https://picsum.photos/300/200?random=1' },
+  { title: 'Random title', imgUrl: 'https://picsum.photos/300/200?random=2' },
+  { title: 'Random title', imgUrl: 'https://picsum.photos/300/200?random=3' },
+  { title: 'Random title', imgUrl: 'https://picsum.photos/300/200?random=4' },
+  { title: 'Random title', imgUrl: 'https://picsum.photos/300/200?random=5' }
+]
 
-const divElement = document.querySelector('div[data-function="printHere"]')
+const container = document.querySelector('div[data-function="printHere"]')
+countries.forEach((country) => {
+  const divElement = document.createElement('div')
 
-const ulElement = document.createElement('ul')
+  const h4Element = document.createElement('h4')
+  h4Element.textContent = country.title
 
-cars.forEach((car) => {
-  const liElement = document.createElement('li')
-  liElement.textContent = car
-  ulElement.appendChild(liElement)
+  const imgElement = document.createElement('img')
+  imgElement.src = country.imgUrl
+
+  divElement.appendChild(h4Element)
+  divElement.appendChild(imgElement)
+
+  container.appendChild(divElement)
 })
-
-divElement.appendChild(ulElement)
