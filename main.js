@@ -17,3 +17,10 @@ focusInputs.forEach((input) => {
     console.log(this.value)
   })
 })
+
+const allInputs = document.querySelectorAll('input')
+allInputs.forEach((input) => {
+  input.addEventListener('input', function () {
+    console.log(this.value)
+  })
+})
