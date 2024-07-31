@@ -10,3 +10,10 @@ document
   .addEventListener('click', function (event) {
     console.log(event)
   })
+
+const focusInputs = document.querySelectorAll('.focus')
+focusInputs.forEach((input) => {
+  input.addEventListener('focus', function () {
+    console.log(this.value)
+  })
+})
