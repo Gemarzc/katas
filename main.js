@@ -1,7 +1,13 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const elementToRemove = document.querySelector('.fn-remove-me')
+const places = ['Gondor', 'Mordor', 'Rivendel', 'La Comarca', 'Nümenor']
 
-  if (elementToRemove) {
-    elementToRemove.remove()
-  }
+const printHereDiv = document.querySelector('div[data-function="printHere"]')
+
+const ul = document.createElement('ul')
+
+places.forEach((place) => {
+  const li = document.createElement('li')
+  li.textContent = place
+  ul.appendChild(li)
 })
+
+printHereDiv.appendChild(ul)
